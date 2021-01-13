@@ -44,26 +44,28 @@ function Frutas({frutas}) {
                     {frutas?.map((fruta, index) => (
                         <Grid item xs={3} key={index}>
                             <Card className={classes.root}>
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        alt={fruta.tfvname}
-                                        height="140"
-                                        image={fruta.imageurl}
-                                        title={fruta.tfvname}
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h4" component="h2">
-                                            Nome: {fruta.tfvname}
-                                        </Typography>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            Nome botânico: {fruta.botname}
-                                        </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            Outros nomes: {fruta.othname}
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
+                                <Link href={'frutas/' + fruta.tfvname}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                            component="img"
+                                            alt={fruta.tfvname}
+                                            height="140"
+                                            image={fruta.imageurl}
+                                            title={fruta.tfvname}
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h4" component="h2">
+                                                Nome: {fruta.tfvname}
+                                            </Typography>
+                                            <Typography gutterBottom variant="h5" component="h2">
+                                                Nome botânico: {fruta.botname}
+                                            </Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                Outros nomes: {fruta.othname}
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                </Link>
                                 <CardActions>
                                     <Button size="small" color="primary">
                                         Compartilhe
