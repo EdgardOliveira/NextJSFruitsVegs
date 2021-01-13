@@ -7,5 +7,7 @@ Consumo da API Tropical Fruit and Veg (http://www.tropicalfruitandveg.com)
 
 ## Faz o consumo da API que retorna os dados em JSON e exibe os resultados em Cartão Média
 
+## Live Preview
+https://tropical.vercel.app/
 
 

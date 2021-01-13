@@ -53,6 +53,9 @@ function Fruta({fruta}) {
                                     title={fruta.botname}
                                 />
                                 <CardContent>
+                                    <Typography gutterBottom variant="h4" component="h2">
+                                        {fruta.tfvname}
+                                    </Typography>
                                     <Typography gutterBottom variant="h5" component="h2">
                                         {fruta.botname}
                                     </Typography>
